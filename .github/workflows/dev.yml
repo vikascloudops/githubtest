@@ -1,0 +1,21 @@
+name: Hello World Pipeline
+
+on:
+  workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello
+        run: echo "Hello World"
+
+      - name: Print Date
+        run: date
+
+      - name: Print Current Directory
+        run: pwd
+
+      - name: List Files
+        run: ls -la
